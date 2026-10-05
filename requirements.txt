@@ -1,0 +1,6 @@
+torch==2.8.0
+numpy==2.2.6
+requests>=2.32,<3
+safetensors==0.6.2
+matplotlib==3.10.6
+huggingface-hub>=0.34,<2

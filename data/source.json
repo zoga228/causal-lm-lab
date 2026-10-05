@@ -1,0 +1,8 @@
+{
+  "url": "https://raw.githubusercontent.com/karpathy/char-rnn/370cbcd448eb7daf32f21a6be560b70e0b33c4e3/data/tinyshakespeare/input.txt",
+  "revision": "370cbcd448eb7daf32f21a6be560b70e0b33c4e3",
+  "corpus": "Tiny Shakespeare",
+  "author": "William Shakespeare",
+  "source_repository": "karpathy/char-rnn",
+  "text": "public-domain Shakespeare excerpts"
+}

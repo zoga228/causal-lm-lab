@@ -1,0 +1,8 @@
+{
+  "vocab_size": 256,
+  "width": 128,
+  "layers": 3,
+  "heads": 4,
+  "context": 128,
+  "rope": true
+}

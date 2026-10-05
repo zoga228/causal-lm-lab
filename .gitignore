@@ -1,0 +1,6 @@
+__pycache__/
+.venv/
+data/*.bin
+data/input.txt
+runs/*/model.safetensors
+hub-export/

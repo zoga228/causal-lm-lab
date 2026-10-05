@@ -1,0 +1,25 @@
+{
+  "url": "https://raw.githubusercontent.com/karpathy/char-rnn/370cbcd448eb7daf32f21a6be560b70e0b33c4e3/data/tinyshakespeare/input.txt",
+  "revision": "370cbcd448eb7daf32f21a6be560b70e0b33c4e3",
+  "corpus": "Tiny Shakespeare",
+  "author": "William Shakespeare",
+  "source_repository": "karpathy/char-rnn",
+  "text": "public-domain Shakespeare excerpts",
+  "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "total_bytes": 1115394,
+  "splits": {
+    "train": [
+      0,
+      892315
+    ],
+    "validation": [
+      892315,
+      1003854
+    ],
+    "test": [
+      1003854,
+      1115394
+    ]
+  },
+  "strategy": "contiguous 80/10/10 byte offsets; no window crosses a split"
+}
