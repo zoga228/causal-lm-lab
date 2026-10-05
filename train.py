@@ -106,7 +106,7 @@ def main():
         optimizer.step()
     model.load_state_dict(best_state)
     model.save_pretrained(directory)
-    final = {"name": args.name, "seed": args.seed, "steps": args.steps, "selected_step": best_step, "parameters": sum(p.numel() for p in model.parameters()), "device": device, "torch_version": torch.__version__, "threads": args.threads, "batch_size": args.batch_size, "training_bytes_presented": args.steps * config.context * args.batch_size, "elapsed_seconds": time.perf_counter() - begin, "validation": evaluate(model, val_tokens), "test": evaluate(model, test_tokens), "bigram_test": bigram(train_tokens, test_tokens), "config": config.__dict__}
+    final = {"name": args.name, "seed": args.seed, "steps": args.steps, "selected_step": best_step, "parameters": sum(p.numel() for p in model.parameters()), "device": device, "torch_version": torch.__version__, "threads": args.threads, "batch_size": args.batch_size, "training_bytes_presented": args.steps * config.context * args.batch_size, "elapsed_seconds": time.perf_counter() - begin, "validation": evaluate(model, val_tokens), "test": evaluate(model, test_tokens), "bigram_test": bigram(train_tokens, test_tokens[:((len(test_tokens)-1)//config.context)*config.context+1]), "config": config.__dict__}
     # Context analysis is descriptive, not used to select a model using the test set.
     final["validation_context"] = {str(c): evaluate(model, val_tokens, context=c, max_windows=128)["bits_per_byte"] for c in (16, 32, 64, 128)}
     (directory / "metrics.json").write_text(json.dumps(final, indent=2))
