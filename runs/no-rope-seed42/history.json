@@ -58,5 +58,10 @@
     "step": 2750,
     "validation_bpb": 2.7816202217962305,
     "elapsed_seconds": 1019.9976986999973
+  },
+  {
+    "step": 3000,
+    "validation_bpb": 2.768401506263927,
+    "elapsed_seconds": 1108.8634003000043
   }
 ]

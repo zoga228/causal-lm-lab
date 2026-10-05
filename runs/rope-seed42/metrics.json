@@ -1769,11 +1769,11 @@
     ]
   },
   "bigram_test": {
-    "nll_nats": 2.5121359016013383,
-    "bits_per_byte": 3.6242460072793756,
-    "byte_perplexity": 12.331240268336096,
+    "nll_nats": 2.5121603989555683,
+    "bits_per_byte": 3.6242813494908384,
+    "byte_perplexity": 12.33154235479719,
     "smoothing": 0.1,
-    "evaluated_bytes": 111539
+    "evaluated_bytes": 111488
   },
   "config": {
     "vocab_size": 256,
